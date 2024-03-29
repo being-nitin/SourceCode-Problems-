@@ -1,0 +1,34 @@
+Leetcode One
+
+https://leetcode.com/problems/power-of-two/submissions/
+
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+       if(n<=0){
+           return false;
+       }
+        
+        if((n&(n-1))==0){
+            return true;
+        }
+        return false;
+  
+}
+}
+
+Whole problem one
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int n = sc.nextInt();
+	if((n&(n-1))==0){
+	    System.out.println("yes it is a power of 2");
+	}
+	else{
+	    System.out.println("no it is not a power of 2");
+	}
+	}
+}
